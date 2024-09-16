@@ -14,7 +14,7 @@ export class UserController {
   @Patch(':id')
   updateUser(
     @Param('id') id: string,
-    @Body('favourite') favourites?: string[],
+    @Body('favourites') favourites?: string[]
   ): Promise<UserDetails> {
     return this.userService.update(id, favourites);
   }

@@ -9,7 +9,7 @@ import { MovieModule } from './movie/movie.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/netflix'),
+    MongooseModule.forRoot('mongodb+srv://parv:INmeKLuhXF9O4SUQ@atlas-cluster.cyqc4.mongodb.net/netflix?retryWrites=true&w=majority'),
     UserModule,
     AuthModule,
     MovieModule,
